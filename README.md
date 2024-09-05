@@ -11,8 +11,11 @@ See CertiHub in action! Click below to watch the live demo. ▶️
 ---
 
 📝 *Issue Certificates*: Admins can create certificates with details like course name, grades, and issuance date.
+
 🔍 *Verify Certificates*: Easily verify certificates by entering the certificate ID—anyone can access and verify!
+
 🛡️ *Blockchain Security*: Leveraging the Ethereum blockchain, every certificate is immutable, tamper-proof, and secure.
+
 🖌️ *User-Friendly Interface*: A modern and intuitive design powered by React and Tailwind CSS ensures a smooth experience.
 
 ---
