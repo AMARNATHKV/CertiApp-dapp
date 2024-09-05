@@ -1,7 +1,6 @@
 # 🏆 CertiHub: The Future of Digital Credentials
 
 Welcome to CertiHub! 🌐 This cutting-edge decentralized application (DApp) revolutionizes how you issue and verify certificates on the blockchain. 
-
 Say goodbye to counterfeit credentials and embrace trust and transparency! 🔒
 
 ---
