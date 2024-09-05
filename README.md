@@ -22,8 +22,10 @@ See CertiHub in action! Click below to watch the live demo. ▶️
 ### Prerequisites
 Before you start, ensure you have the following tools installed:
 
-*** ![image](https://github.com/user-attachments/assets/be7992a0-1ac8-4763-a262-9e6719d8dc51)***   *** ![image](https://github.com/user-attachments/assets/08d0e16b-bc87-498d-a281-7acf64d4cf24)***   *** ![image](https://github.com/user-attachments/assets/c678de9f-1174-454e-9236-9c99d4f52d44)***    ![image](https://github.com/user-attachments/assets/8e53c40a-be20-4054-8c57-b7be04538b13)
-
+🖥 Node.js
+⚛️ React
+🦊 Metamask
+💰 Ethereum wallet with testnet ETH
 
 ### Installation
 
