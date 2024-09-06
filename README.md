@@ -68,7 +68,7 @@ Our DApp offers an engaging and interactive experience. Here's what you'll find:
 ### Connecting to Metamask
 Ensure your Metamask wallet is connected to interact with the DApp:
 
- javascript code
+    javascript code
     ```bash
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     await provider.send("eth_requestAccounts", []);
