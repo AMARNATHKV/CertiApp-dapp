@@ -75,10 +75,13 @@ Ensure your Metamask wallet is connected to interact with the DApp:
     const signer = provider.getSigner();
 
  ### Issuing a Certificate
+ 
+Admins can issue certificates through the Issue Certificate page. Here's how the process works in the IssueCertificate component: 
 
-Admins can issue certificates through the Issue Certificate page. Here's how the process works in the IssueCertificate component:
 Input Certificate Details: Admins input the certificate ID, candidate's name, selected course, grade, and issue date.
+
 Blockchain Interaction: The component uses Ethers.js to connect to the Ethereum blockchain. If the certificate ID already exists, the user is alerted.
+
 Issue Certificate: The certificate is issued through a smart contract transaction, and the transaction details are logged. Successful issuance triggers a confirmation alert.
    
 
@@ -104,8 +107,8 @@ Issue Certificate: The certificate is issued through a smart contract transactio
     alert('Certificate issued successfully!');
     } catch (error) {
     alert('Failed to issue certificate. Please try again.');
-  }
-};
+   }
+   };
 
 
 ## ✅ Verifying a Certificate
