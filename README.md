@@ -68,13 +68,13 @@ Our DApp offers an engaging and interactive experience. Here's what you'll find:
 ### Connecting to Metamask
 Ensure your Metamask wallet is connected to interact with the DApp:
 
-    javascript code
-     ```bash
-     const provider = new ethers.providers.Web3Provider(window.ethereum);
-     await provider.send("eth_requestAccounts", []);
-     const signer = provider.getSigner();
 
-### Issuing a Certificate
+    ```bash
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    await provider.send("eth_requestAccounts", []);
+    const signer = provider.getSigner();
+
+ ### Issuing a Certificate
 
 Admins can issue certificates through the Issue Certificate page. Here's how the process works in the IssueCertificate component:
 Input Certificate Details: Admins input the certificate ID, candidate's name, selected course, grade, and issue date.
