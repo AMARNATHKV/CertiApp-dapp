@@ -55,9 +55,7 @@ Before you start, ensure you have the following tools installed:
 
    ```bash
    npx hardhat run scripts/deploy.js --network <network-name>
-
 ---
-
 ## 💡 Frontend Overview
 Our DApp offers an engaging and interactive experience. Here's what you'll find:
 
