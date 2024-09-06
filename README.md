@@ -82,8 +82,8 @@ Blockchain Interaction: The component uses Ethers.js to connect to the Ethereum 
 Issue Certificate: The certificate is issued through a smart contract transaction, and the transaction details are logged. Successful issuance triggers a confirmation alert.
 
 javascript code
-      ```bash
-      const issueCerti = async (event) => {
+   ```bash
+   const issueCerti = async (event) => {
         event.preventDefault();
         try {
           const provider = new ethers.providers.Web3Provider(window.ethereum);
