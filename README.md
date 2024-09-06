@@ -102,7 +102,7 @@ Issue Certificate: The certificate is issued through a smart contract transactio
     const tx = await instance.issue(id, name, course, grade, date);
     await tx.wait();
     alert('Certificate issued successfully!');
-  } catch (error) {
+    } catch (error) {
     alert('Failed to issue certificate. Please try again.');
   }
 };
