@@ -42,20 +42,18 @@ Before you start, ensure you have the following tools installed:
    
 2. **Install all dependencies**:
 
-bash
-Copy code
+   bash 
 npm install
 
 3. **Run the development server**:
 
-```bash
-Copy code
+
+   bash
 npm run dev
 
 4. **Deploy the smart contract**:
 
-bash
-Copy code
+   bash
 npx hardhat run scripts/deploy.js --network <network-name>
 
 ## 💡 Frontend Overview
