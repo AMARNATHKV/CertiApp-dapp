@@ -56,6 +56,8 @@ Before you start, ensure you have the following tools installed:
    ```bash
    npx hardhat run scripts/deploy.js --network <network-name>
 
+---
+
 ## 💡 Frontend Overview
 Our DApp offers an engaging and interactive experience. Here's what you'll find:
 
@@ -114,10 +116,16 @@ Issue Certificate: The certificate is issued through a smart contract transactio
 - ### Verifying a Certificate
 Anyone can verify certificates by entering the certificate ID on the Home page. Data is pulled directly and securely from the blockchain!
 
+---
+
 ## 🤝 How to Contribute
 We love contributions! 💡 Fork the repository, report issues, or submit pull requests. Let’s make CertiHub even better together! 🚀
 
+---
+
 ## 📜 License
 This project is licensed under the MIT License. View the LICENSE file for more details.
+
+---
 
 👩‍💻Happy building!🚀 Let’s reshape the future of credentials! ✨
