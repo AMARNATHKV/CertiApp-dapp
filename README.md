@@ -69,10 +69,10 @@ Our DApp offers an engaging and interactive experience. Here's what you'll find:
 Ensure your Metamask wallet is connected to interact with the DApp:
 
 javascript code
-      ```bash
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
-      await provider.send("eth_requestAccounts", []);
-      const signer = provider.getSigner();
+    ```bash
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    await provider.send("eth_requestAccounts", []);
+    const signer = provider.getSigner();
 
 ### Issuing a Certificate
 
@@ -101,7 +101,8 @@ javascript code
         } catch (error) {
           alert('Failed to issue certificate. Please try again.');
         }
-      };
+   };
+
 ## Verifying a Certificate
 Anyone can verify certificates by entering the certificate ID on the Home page. Data is pulled directly and securely from the blockchain!
 
