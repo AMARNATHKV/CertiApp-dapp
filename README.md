@@ -41,17 +41,17 @@ Before you start, ensure you have the following tools installed:
    cd certificate-dapp
 Install all dependencies:
 
-bash
+```bash
 Copy code
 npm install
 Run the development server:
 
-bash
+```bash
 Copy code
 npm run dev
 Deploy the smart contract:
 
-bash
+```bash
 Copy code
 npx hardhat run scripts/deploy.js --network <network-name>
 💡 Frontend Overview
