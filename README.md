@@ -83,7 +83,30 @@ Issue Certificate: The certificate is issued through a smart contract transactio
    
 
    
-    npx hardhat run scripts/deploy.js --network <network-name>
+    const issueCerti = async (event) => {
+  event.preventDefault();
+  try {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    await provider.send('eth_requestAccounts', []);
+    const signer = provider.getSigner();
+    const instance = new ethers.Contract(CertModuleCert, abi, signer);
+
+    // Check if a certificate with the same ID already exists
+    const existingCert = await instance.Certificates(id);
+    if (existingCert && existingCert.name) {
+      alert('Certificate with this ID already exists. Please use a different ID.');
+      return;
+    }
+
+    // Issue the certificate on the blockchain
+    const tx = await instance.issue(id, name, course, grade, date);
+    await tx.wait();
+    alert('Certificate issued successfully!');
+  } catch (error) {
+    alert('Failed to issue certificate. Please try again.');
+  }
+};
+
 
 ## ✅ Verifying a Certificate
 Anyone can verify certificates by entering the certificate ID on the Home page. Data is pulled directly and securely from the blockchain!
