@@ -107,11 +107,11 @@ Issue Certificate: The certificate is issued through a smart contract transactio
     alert('Certificate issued successfully!');
     } catch (error) {
     alert('Failed to issue certificate. Please try again.');
-   }
-   };
+    }
+    };
 
 
-## ✅ Verifying a Certificate
+### Verifying a Certificate
 Anyone can verify certificates by entering the certificate ID on the Home page. Data is pulled directly and securely from the blockchain!
 
 ## 🤝 How to Contribute
