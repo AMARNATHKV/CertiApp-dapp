@@ -84,8 +84,8 @@ Issue Certificate: The certificate is issued through a smart contract transactio
 
    
     const issueCerti = async (event) => {
-  event.preventDefault();
-  try {
+    event.preventDefault();
+    try {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     await provider.send('eth_requestAccounts', []);
     const signer = provider.getSigner();
