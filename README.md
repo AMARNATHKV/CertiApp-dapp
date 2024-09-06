@@ -27,10 +27,10 @@ See CertiHub in action! Click below to watch the live demo. ▶️
 
 Before you start, ensure you have the following tools installed:
 
-- **Node.js**
-- **React**
-- **Metamask**
-- **Ethereum wallet** with testnet ETH
+- 🖥 Node.js
+- ⚛️ React
+- 🦊 Metamask
+- 💰 Ethereum wallet with testnet ETH
 
 ### Installation
 
@@ -39,19 +39,22 @@ Before you start, ensure you have the following tools installed:
    ```bash
    git clone https://github.com/your-username/certificate-dapp.git
    cd certificate-dapp
-Install all dependencies:
+   
+2. **Install all dependencies**:
 
-```bash
+bash
 Copy code
 npm install
-Run the development server:
 
-```bash
+3. **Run the development server**:
+
+bash
 Copy code
 npm run dev
-Deploy the smart contract:
 
-```bash
+4. **Deploy the smart contract**:
+
+bash
 Copy code
 npx hardhat run scripts/deploy.js --network <network-name>
 
