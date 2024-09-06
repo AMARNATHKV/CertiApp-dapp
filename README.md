@@ -48,7 +48,7 @@ npm install
 
 3. **Run the development server**:
 
-bash
+```bash
 Copy code
 npm run dev
 
