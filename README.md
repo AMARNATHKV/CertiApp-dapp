@@ -42,18 +42,18 @@ Before you start, ensure you have the following tools installed:
    
 2. **Install all dependencies**:
 
-   bash 
+   ```bash 
 npm install
 
 3. **Run the development server**:
 
 
-   bash
+   ``` bash
 npm run dev
 
 4. **Deploy the smart contract**:
 
-   bash
+   ```bash
 npx hardhat run scripts/deploy.js --network <network-name>
 
 ## 💡 Frontend Overview
@@ -62,22 +62,25 @@ Our DApp offers an engaging and interactive experience. Here's what you'll find:
 🏠 Home Page: Quickly connect your Metamask wallet and search certificates by ID.
 📝 Issue Certificate Page: Admins can issue certificates by filling out a form with necessary details like course, candidate name, and issue date.
 📜 Certificate Display: View detailed certificate information, securely fetched from the blockchain.
-Connecting to Metamask
+
+### Connecting to Metamask
 Ensure your Metamask wallet is connected to interact with the DApp:
 
-javascript
-Copy code
+javascript code
+      ```bash
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 await provider.send("eth_requestAccounts", []);
 const signer = provider.getSigner();
-Issuing a Certificate
-Admins can issue certificates through the Issue Certificate page. Here's how the process works in the IssueCertificate component:
 
+### Issuing a Certificate
+
+Admins can issue certificates through the Issue Certificate page. Here's how the process works in the IssueCertificate component:
 Input Certificate Details: Admins input the certificate ID, candidate's name, selected course, grade, and issue date.
 Blockchain Interaction: The component uses Ethers.js to connect to the Ethereum blockchain. If the certificate ID already exists, the user is alerted.
 Issue Certificate: The certificate is issued through a smart contract transaction, and the transaction details are logged. Successful issuance triggers a confirmation alert.
-javascript
-Copy code
+
+javascript code
+      ```bash
 const issueCerti = async (event) => {
   event.preventDefault();
   try {
@@ -97,13 +100,13 @@ const issueCerti = async (event) => {
     alert('Failed to issue certificate. Please try again.');
   }
 };
-Verifying a Certificate
+## Verifying a Certificate
 Anyone can verify certificates by entering the certificate ID on the Home page. Data is pulled directly and securely from the blockchain!
 
-🤝 How to Contribute
+## 🤝 How to Contribute
 We love contributions! 💡 Fork the repository, report issues, or submit pull requests. Let’s make CertiHub even better together! 🚀
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License. View the LICENSE file for more details.
 
-👩‍💻 Happy building! 🚀 Let’s reshape the future of credentials! ✨
+👩‍💻Happy building!🚀 Let’s reshape the future of credentials! ✨
