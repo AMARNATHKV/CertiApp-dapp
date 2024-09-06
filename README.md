@@ -65,7 +65,7 @@ Our DApp offers an engaging and interactive experience. Here's what you'll find:
 
 📜 **Certificate Display**: View detailed certificate information, securely fetched from the blockchain.
 
-### Connecting to Metamask
+- ### Connecting to Metamask
 Ensure your Metamask wallet is connected to interact with the DApp:
 
 
@@ -74,7 +74,7 @@ Ensure your Metamask wallet is connected to interact with the DApp:
     await provider.send("eth_requestAccounts", []);
     const signer = provider.getSigner();
 
- ### Issuing a Certificate
+- ### Issuing a Certificate
  
 Admins can issue certificates through the Issue Certificate page. Here's how the process works in the IssueCertificate component: 
 
@@ -111,7 +111,7 @@ Issue Certificate: The certificate is issued through a smart contract transactio
     };
 
 
-### Verifying a Certificate
+- ### Verifying a Certificate
 Anyone can verify certificates by entering the certificate ID on the Home page. Data is pulled directly and securely from the blockchain!
 
 ## 🤝 How to Contribute
