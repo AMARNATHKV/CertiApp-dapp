@@ -71,8 +71,7 @@ Ensure your Metamask wallet is connected to interact with the DApp:
 javascript code
       ```bash
       const provider = new ethers.providers.Web3Provider(window.ethereum);
-      await provider.send("eth_requestAccounts", []);
-      const signer = provider.getSigner();
+      
 
 ### Issuing a Certificate
 
