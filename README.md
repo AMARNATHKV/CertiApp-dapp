@@ -80,8 +80,8 @@ Admins can issue certificates through the Issue Certificate page. Here's how the
 Input Certificate Details: Admins input the certificate ID, candidate's name, selected course, grade, and issue date.
 Blockchain Interaction: The component uses Ethers.js to connect to the Ethereum blockchain. If the certificate ID already exists, the user is alerted.
 Issue Certificate: The certificate is issued through a smart contract transaction, and the transaction details are logged. Successful issuance triggers a confirmation alert.
-
-   const issueCerti = async (event) => {
+    ```bash
+       const issueCerti = async (event) => {
         event.preventDefault();
         try {
           const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -102,7 +102,7 @@ Issue Certificate: The certificate is issued through a smart contract transactio
    };
 
 
-## Verifying a Certificate
+## ✅ Verifying a Certificate
 Anyone can verify certificates by entering the certificate ID on the Home page. Data is pulled directly and securely from the blockchain!
 
 ## 🤝 How to Contribute
