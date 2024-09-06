@@ -74,7 +74,7 @@ javascript code
     await provider.send("eth_requestAccounts", []);
     const signer = provider.getSigner();
 
-### Issuing a Certificate
+ ### Issuing a Certificate
 
 Admins can issue certificates through the Issue Certificate page. Here's how the process works in the IssueCertificate component:
 Input Certificate Details: Admins input the certificate ID, candidate's name, selected course, grade, and issue date.
@@ -102,6 +102,7 @@ javascript code
           alert('Failed to issue certificate. Please try again.');
         }
    };
+
 
 ## Verifying a Certificate
 Anyone can verify certificates by entering the certificate ID on the Home page. Data is pulled directly and securely from the blockchain!
