@@ -43,34 +43,36 @@ Before you start, ensure you have the following tools installed:
 2. **Install all dependencies**:
 
    ```bash 
-npm install
+   npm install
 
 3. **Run the development server**:
 
 
    ``` bash
-npm run dev
+   npm run dev
 
 4. **Deploy the smart contract**:
 
    ```bash
-npx hardhat run scripts/deploy.js --network <network-name>
+   npx hardhat run scripts/deploy.js --network <network-name>
 
 ## 💡 Frontend Overview
 Our DApp offers an engaging and interactive experience. Here's what you'll find:
 
-🏠 Home Page: Quickly connect your Metamask wallet and search certificates by ID.
-📝 Issue Certificate Page: Admins can issue certificates by filling out a form with necessary details like course, candidate name, and issue date.
-📜 Certificate Display: View detailed certificate information, securely fetched from the blockchain.
+🏠 **Home Page**: Quickly connect your Metamask wallet and search certificates by ID.
+
+📝 **Issue Certificate Page**: Admins can issue certificates by filling out a form with necessary details like course, candidate name, and issue date.
+
+📜 **Certificate Display**: View detailed certificate information, securely fetched from the blockchain.
 
 ### Connecting to Metamask
 Ensure your Metamask wallet is connected to interact with the DApp:
 
 javascript code
       ```bash
-const provider = new ethers.providers.Web3Provider(window.ethereum);
-await provider.send("eth_requestAccounts", []);
-const signer = provider.getSigner();
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      await provider.send("eth_requestAccounts", []);
+      const signer = provider.getSigner();
 
 ### Issuing a Certificate
 
@@ -81,25 +83,25 @@ Issue Certificate: The certificate is issued through a smart contract transactio
 
 javascript code
       ```bash
-const issueCerti = async (event) => {
-  event.preventDefault();
-  try {
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    await provider.send('eth_requestAccounts', []);
-    const signer = provider.getSigner();
-    const instance = new ethers.Contract(CertModuleCert, abi, signer);
-    const existingCert = await instance.Certificates(id);
-    if (existingCert && existingCert.name) {
-      alert('Certificate with this ID already exists. Please use a different ID.');
-      return;
-    }
-    const tx = await instance.issue(id, name, course, grade, date);
-    await tx.wait();
-    alert('Certificate issued successfully!');
-  } catch (error) {
-    alert('Failed to issue certificate. Please try again.');
-  }
-};
+      const issueCerti = async (event) => {
+        event.preventDefault();
+        try {
+          const provider = new ethers.providers.Web3Provider(window.ethereum);
+          await provider.send('eth_requestAccounts', []);
+          const signer = provider.getSigner();
+          const instance = new ethers.Contract(CertModuleCert, abi, signer);
+          const existingCert = await instance.Certificates(id);
+          if (existingCert && existingCert.name) {
+            alert('Certificate with this ID already exists. Please use a different ID.');
+            return;
+          }
+          const tx = await instance.issue(id, name, course, grade, date);
+          await tx.wait();
+          alert('Certificate issued successfully!');
+        } catch (error) {
+          alert('Failed to issue certificate. Please try again.');
+        }
+      };
 ## Verifying a Certificate
 Anyone can verify certificates by entering the certificate ID on the Home page. Data is pulled directly and securely from the blockchain!
 
