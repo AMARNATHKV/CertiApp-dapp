@@ -41,18 +41,18 @@ Before you start, ensure you have the following tools installed:
    cd certificate-dapp
 Install all dependencies:
 
-```bash
-Copy code
+bash
+```Copy code
 npm install
 Run the development server:
 
-```bash
-Copy code
+bash
+```Copy code
 npm run dev
 Deploy the smart contract:
 
-```bash
-Copy code
+bash
+```Copy code
 npx hardhat run scripts/deploy.js --network <network-name>
 💡 Frontend Overview
 Our DApp offers an engaging and interactive experience. Here's what you'll find:
