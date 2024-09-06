@@ -36,7 +36,7 @@ Before you start, ensure you have the following tools installed:
 
 1. **Clone the repository**:
 
-
+   ```bash
    git clone https://github.com/your-username/certificate-dapp.git
    cd certificate-dapp
    
@@ -81,8 +81,6 @@ Input Certificate Details: Admins input the certificate ID, candidate's name, se
 Blockchain Interaction: The component uses Ethers.js to connect to the Ethereum blockchain. If the certificate ID already exists, the user is alerted.
 Issue Certificate: The certificate is issued through a smart contract transaction, and the transaction details are logged. Successful issuance triggers a confirmation alert.
 
-javascript code
-    ```bash
    const issueCerti = async (event) => {
         event.preventDefault();
         try {
