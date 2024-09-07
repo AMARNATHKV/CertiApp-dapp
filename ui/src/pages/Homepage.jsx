@@ -27,10 +27,6 @@ const Homepage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-500 via-blue-300 to-purple-500 flex flex-col items-center justify-center p-6">
-      <div className="flex items-center justify-between w-full max-w-4xl mb-8 px-4">
-        <h2 className="text-2xl font-bold text-white">CertiHub</h2>
-      </div>
-
       <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center space-y-6 w-full max-w-md">
         <h1 className="text-3xl font-extrabold text-gray-800 text-center">Certificate Dapp</h1>
         
