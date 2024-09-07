@@ -37,7 +37,7 @@ const Homepage = () => {
           Connect to MetaMask
         </button>
 
-        <img src={Logo} alt="Scholar Logo" className="h-32 w-32 object-cover rounded-full shadow-md" />
+        <img src={Logo} alt="Scholar Logo" className="h-32 w-32  rounded-full shadow-md" />
 
         <form onSubmit={searchCertificate} className="flex flex-col items-center w-full space-y-4">
           <input

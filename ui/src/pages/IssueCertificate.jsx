@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { BrowserProvider, Contract } from 'ethers';
 import { abi } from '../scdata/Cert.json';
 import { CertModuleCert } from '../scdata/deployed_addresses.json';
+import { ToastContainer, toast } from 'react-toastify';
+
 
 function IssueCertificate() {
   const [id, setId] = useState('');
@@ -19,14 +21,15 @@ function IssueCertificate() {
       await provider.send('eth_requestAccounts', []);
 
       const signer = await provider.getSigner();
-
       
       const instance = new Contract(CertModuleCert, abi, signer);
 
+      console.log(signer.getAddress);
       
+  
       const existingCert = await instance.Certificates(id);
       if (existingCert && existingCert.name) {
-        alert('Certificate with this ID already exists. Please use a different ID.');
+        toast.error('Certificate with this ID already exists. Please use a different ID.');
         return;
       }
 
@@ -34,10 +37,10 @@ function IssueCertificate() {
       await tx.wait();
 
       console.log('Transaction successful:', tx);
-      alert('Certificate issued successfully!');
+      toast.success('Certificate issued successfully!');
     } catch (error) {
       console.error('Error issuing certificate:', error);
-      alert('Failed to issue certificate. Please try again.');
+      toast.error('Failed to issue certificate');
     }
   };
 
@@ -114,6 +117,7 @@ function IssueCertificate() {
             <option value="" disabled>
               Select a grade
             </option>
+            <option value="S">S</option>
             <option value="A">A</option>
             <option value="B">B</option>
             <option value="C">C</option>
