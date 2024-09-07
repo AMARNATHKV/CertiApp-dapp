@@ -8,7 +8,7 @@ Welcome to CertiHub! 🌐 This cutting-edge decentralized application (DApp) rev
 
 See CertiHub in action! Click below to watch the live demo. ▶️
 
-[![Watch the Demo](link_to_your_demo_video_thumbnail)](link_to_your_demo_video)
+https://youtu.be/GApXq5Bw_RA
 
 ---
 
